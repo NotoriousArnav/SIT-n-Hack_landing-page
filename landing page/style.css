@@ -5,7 +5,7 @@
 }
 
 body {
-  min-height: 200vh;
+  height: 100vh;
   font-family: monospace;
 }
 
@@ -77,7 +77,7 @@ body {
 
 .hero img {
   position: absolute;
-  top: 50vh;
+  top: 30vh;
   left: 0vw;
   animation-name: rotate;
   animation-duration: 100s;
