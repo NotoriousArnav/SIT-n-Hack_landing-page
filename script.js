@@ -31,7 +31,7 @@ gsap.from(".nav_menu_list .nav_menu_item", {
   duration: 0.5,
   stagger: 0.3,
 });
-// ==== TOGGLE BTN ==== //
+// ==== TOGGLE BTNN ==== //
 gsap.from(".toggle_btn", {
   opacity: 0,
   y: -10,
