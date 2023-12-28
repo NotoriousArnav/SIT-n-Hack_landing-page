@@ -1,0 +1,133 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 200vh;
+  font-family: monospace;
+}
+
+.hero {
+  height: 100vh;
+  background-image: url(./images/space-background.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.container {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.welcome-text {
+  font-size: 4rem;
+  color: white;
+  text-shadow: 5px 2px black;
+}
+
+.join {
+  font-size: 1.5rem;
+  width: 200px;
+  font-weight: bolder;
+
+  padding: 1em;
+  border-radius: 2rem;
+  z-index: 1;
+  border: none;
+  box-shadow: -5px 5px black;
+}
+
+.join:hover {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  box-shadow: -2px 2px white;
+}
+.container span {
+  font-size: 7rem;
+  color: white;
+
+  font-weight: bolder;
+  text-shadow: 5px 2px black;
+  z-index: 1;
+}
+
+.first {
+  animation-name: float-up;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.second {
+  animation-name: float-down;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.hero img {
+  position: absolute;
+  top: 50vh;
+  left: 0vw;
+  animation-name: rotate;
+  animation-duration: 100s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes float-up {
+  0% {
+    transform: translateY(0px);
+  }
+  33% {
+    transform: translateY(6px);
+  }
+  66% {
+    transform: translatey(-6px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes float-down {
+  0% {
+    transform: translateY(0px);
+  }
+  33% {
+    transform: translateY(-6px);
+  }
+  66% {
+    transform: translatey(6px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: translateX(0);
+  }
+
+  33% {
+    transform: translateX(70vw) rotate(180deg);
+  }
+
+  66% {
+    transform: translateX(0) rotate(-180deg);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
